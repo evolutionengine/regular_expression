@@ -7,3 +7,9 @@ console.log(str.match(regex));
 // returns [ 'a', 'a', 'a', 'aa' ]
 // note that the last item is 'aa' as it is found
 // continuous
+
+// matching for multiple occurrences
+let chewieQuote: string = "Aaaaaaaaaaaaaaaarrrgh!";
+let chewieRegex: RegExp = /Aa*/; // Change this line
+let result: RegExpMatchArray = chewieQuote.match(chewieRegex);
+console.log(result);
